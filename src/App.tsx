@@ -11,11 +11,20 @@ function App() {
       <Steps>
         <Step>
           {({ goToNext }) => (
-            <PageContent>
-              <h1>Welcome traveler</h1>
-              <button type="button" className="start-button" onClick={goToNext}>
-                Start
-              </button>
+            <PageContent className="home">
+              <div className="headers">
+                <h1>Progressive Quiz</h1>
+                <h3>This is a quiz, yeah I know, pretty cool.</h3>
+              </div>
+              <div className="actions">
+                <button
+                  type="button"
+                  className="start-button"
+                  onClick={goToNext}
+                >
+                  Start
+                </button>
+              </div>
             </PageContent>
           )}
         </Step>

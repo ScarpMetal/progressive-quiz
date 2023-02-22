@@ -1,10 +1,23 @@
-.start-button {
-  font-size: large;
-  padding: 0.5em 1em;
-  background-color: transparent;
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
 
-  &:hover {
-    background-color: #00000022;
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .start-button {
+    font-size: large;
+    padding: 0.5em 1em;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #00000022;
+    }
   }
 }
 
