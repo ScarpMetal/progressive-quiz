@@ -1,0 +1,44 @@
+@use "variables";
+
+.question {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15vh;
+
+  .count {
+    color: #00000088;
+  }
+
+  .text {
+    font-size: 1.2em;
+    padding: 0 0.5em;
+    line-height: 1.2;
+  }
+
+  .choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    .choice {
+      user-select: none;
+      border: none;
+      border-radius: 0;
+      width: 80px;
+      line-height: 1.2;
+      height: 46px;
+      padding: 0 10px;
+      border-radius: 0.2em;
+      box-sizing: border-box;
+      color: inherit;
+      background-color: transparent;
+
+      &[data-selected="true"]:not(:hover) {
+        background-color: #00000033;
+      }
+    }
+  }
+}

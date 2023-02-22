@@ -1,0 +1,28 @@
+@use "variables";
+
+.steps {
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.step {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  color: variables.$black;
+  background-color: variables.$light;
+
+  button {
+    color: inherit;
+  }
+
+  &:nth-child(4n + 2) {
+    background-color: variables.$medium;
+  }
+
+  &:nth-child(4n + 4) {
+    background-color: variables.$dark;
+    color: variables.$white;
+  }
+}
