@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { cx } from "utils";
-import "./styles.scss";
+import "./PageContent.scss";
 
 export default function PageContent({
   children,

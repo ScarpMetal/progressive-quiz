@@ -7,8 +7,8 @@ import { useAtomValue } from "jotai";
 import { useMemo } from "react";
 import { ReactP5Wrapper } from "react-p5-wrapper";
 import { map } from "utils";
+import "./Results.scss";
 import sketch, { Dimension } from "./sketch";
-import "./styles.scss";
 
 type GraphInfo = {
   dimX: Dimension;

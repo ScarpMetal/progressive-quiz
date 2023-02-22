@@ -1,5 +1,6 @@
 import { ReactNode, useCallback, useEffect, useRef } from "react";
 import { getIdString } from "utils";
+import "./Step.scss";
 import { StepAction } from "./types";
 import { getFirstStep, getLastStep, getNextStep, getPrevStep } from "./utils";
 

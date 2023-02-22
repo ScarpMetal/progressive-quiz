@@ -3,7 +3,7 @@ import PageContent from "components/PageContent/PageContent";
 import { StepAction } from "components/Stepper";
 import { useAtom } from "jotai";
 import { useCallback, useMemo } from "react";
-import "./styles.scss";
+import "./Question.scss";
 
 const Question = ({
   questions,
