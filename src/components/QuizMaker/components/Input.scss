@@ -1,0 +1,25 @@
+@use "variables";
+
+.input {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+
+  &.horizontal {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input {
+    margin: auto;
+    line-height: 1.5em;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    border: solid 1px variables.$medium;
+    border-radius: 0.2em;
+  }
+}

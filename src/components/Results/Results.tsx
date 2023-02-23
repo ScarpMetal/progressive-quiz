@@ -1,19 +1,13 @@
 import { resultsAtom } from "atoms";
+import Graph, { GraphInfo } from "components/Graph";
 import PageContent from "components/PageContent/PageContent";
 import { StepAction } from "components/Stepper";
 import dimensions from "data/dimensions";
 import questions from "data/questions";
 import { useAtomValue } from "jotai";
 import { useMemo } from "react";
-import { ReactP5Wrapper } from "react-p5-wrapper";
 import { map } from "utils";
 import "./Results.scss";
-import sketch, { Dimension } from "./sketch";
-
-type GraphInfo = {
-  dimX: Dimension;
-  dimY: Dimension;
-};
 
 export default function Results({
   goToStart,
@@ -62,12 +56,12 @@ export default function Results({
   }, [results]);
 
   const resultLabel = "Unilateral thinker";
-  console.log("graphInfo", graphInfo);
+
   return (
     <PageContent className="results">
       <h2>Results</h2>
       <h1>You're a {resultLabel}!</h1>
-      <ReactP5Wrapper sketch={sketch} info={graphInfo} />
+      <Graph info={graphInfo} />
       <div className="actions">
         <button type="button" onClick={goToStart}>
           Restart

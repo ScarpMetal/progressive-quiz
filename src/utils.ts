@@ -2,6 +2,10 @@ export function getIdString(num: number): string {
   return `ID-${num}`;
 }
 
+export function getRandomId(): string {
+  return getIdString(Math.random());
+}
+
 export function cx(...args: any[]): string {
   return args.filter(Boolean).join(" ");
 }

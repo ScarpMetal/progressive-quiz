@@ -8,7 +8,7 @@ import "./Quiz.scss";
 export default function Quiz() {
   return (
     <Steps>
-      <Step>
+      <Step index={0}>
         {({ goToNext }) => (
           <PageContent className="home">
             <div className="headers">
@@ -25,7 +25,7 @@ export default function Quiz() {
       </Step>
       {questions.map((question, index) => {
         return (
-          <Step key={question.id}>
+          <Step key={question.id} index={1 + index}>
             {({ goToNext }) => (
               <Question
                 question={question}
@@ -37,7 +37,7 @@ export default function Quiz() {
           </Step>
         );
       })}
-      <Step>
+      <Step index={questions.length + 1}>
         {({ goToStart, goToNext }) => (
           <Results goToStart={goToStart} goToNext={goToNext} />
         )}

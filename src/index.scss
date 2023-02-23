@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,6 +9,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: variables.$light;
   font-family: "Josefin Sans", cursive;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
 }
 
 button {
@@ -29,11 +35,25 @@ button {
   }
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 * {
+  box-sizing: border-box;
   transition: 0.2s;
 }
